@@ -11,7 +11,7 @@
 				<script>
 				$(document).ready(function(){
 				    $("button").click(function(){
-				        $.ajax({url: "http://www.last.fm/api", success: function(result){
+				        $.ajax({url: "https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyCD3NSz6m7hFnvXdWFbOznCNt2hap638nA&callback=initMap", success: function(result){
 				            $("#div1").html(result);
 				        }});
 				    });
